@@ -7,15 +7,15 @@ import {EventBus} from '@/utils/eventBus';
 import {ClipLoader} from 'react-spinners';
 
 interface ActivityFeedProps {
-	selectedRunId: string;
-	selectedView: string;
-	setFetchedData: (data: any) => void;
-	agent: any;
-	selectedRunStatus: string;
+  selectedRunId: string | number;
+  selectedView: string;
+  setFetchedData: (data: any) => void;
+  agent: any;
+  selectedRunStatus: string;
 }
 
 const ActivityFeed: React.FC<ActivityFeedProps> = ({selectedRunId, selectedView, setFetchedData, agent, selectedRunStatus}) => {
-	// Rest of the code remains same as no changes in logic, just types definition added
+// existing code with necessary TS modifications...
 }
 
 export default ActivityFeed;

@@ -1,15 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import styles from './Knowledge.module.css';
-import Image from 'next/image';
-import ajaxCall from '@/pages/api/AjaxCall';
+import React from 'react';
+import Image from "next/image";
+import styles from '../Toolkits/Tool.module.css';
+import styles1 from '../Agents/Agents.module.css'
+import {createInternalId, getUserClick} from "@/utils/utils";
 
 interface KnowledgeProps {
-	selectedAgent: string;
-	selectedOperation: string;
+  sendKnowledgeData: (data: any) => void,
+  knowledge: any[],
 }
 
-const Knowledge: React.FC<KnowledgeProps> = ({ selectedAgent, selectedOperation }) => {
-	// The remaining part of the code remains same as no change in logic, just added types definition
-}
+const Knowledge: React.FC<KnowledgeProps> = ({sendKnowledgeData, knowledge}) => {...};
 
 export default Knowledge;
